@@ -11,6 +11,7 @@ Plugin 'mattn/vim-lsp-settings'
 
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -24,12 +25,12 @@ set shiftwidth=4
 set expandtab
 
 " Status Line
-set statusline=buffer=%n\ 
-set statusline+=%f
-set statusline+=%=
-set statusline+=%l
-set statusline+=/
-set statusline+=%L
+set statusline=buffer=%n\  " %n=buffer number
+set statusline+=%f  " Path to file
+set statusline+=%=  " Right Aling the next section
+set statusline+=%l  " Line Number
+set statusline+=/   " Seperator
+set statusline+=%L  " Total Lines
 
 " Mappings
 nnoremap <space> :
