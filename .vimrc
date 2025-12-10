@@ -105,8 +105,18 @@ let g:asyncomplete_auto_popup = 1
 let g:asyncomplete_auto_completeopt = 0
 set completeopt=menuone,noinsert,noselect
 
-autocmd FileType python setlocal omnifunc=lsp#complete
-
+augroup lsp
+    au!
+    au FileType python setlocal omnifunc=lsp#complete
+augroup END
+if executable('ruff')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'ruff',
+        \ 'cmd': {server_info->['ruff', 'server']},
+        \ 'allowlist': ['python'],
+        \ 'workspace_config': {},
+        \ })
+endif
 
 " }}}
 
