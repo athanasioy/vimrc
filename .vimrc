@@ -54,6 +54,8 @@ augroup cmds
     au FileType python :nnoremap <F10> :w<cr>:!python3 -m pdb "%"<cr>
     " Yaml
     au FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
+    au FileType yaml :iabbrev entr - col_name:<cr>col_dtype:
+    au FileType yaml :setlocal foldmethod=indent
 augroup end
 
 " Vimscript file settings 
