@@ -42,6 +42,8 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
+vnoremap <leader>y "*y
+noremap <leader>p "*p
 
 " NerdTree
 nnoremap <F2> :NERDTreeToggle<cr>
