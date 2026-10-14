@@ -11,6 +11,7 @@ Plugin 'mattn/vim-lsp-settings'
 
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'tmhedberg/SimpylFold'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,6 +39,7 @@ inoremap jk <esc>
 inoremap <esc> <nop>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader><leader> :b#<cr>
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
@@ -58,6 +60,7 @@ augroup cmds
     " Yaml
     au FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
     au FileType yaml :iabbrev entr - col_name:<cr>col_dtype:
+    au FileType yaml :iabbrev uuid uniqueidentifier
     au FileType yaml :setlocal foldmethod=indent
 augroup end
 
