@@ -13,6 +13,7 @@ Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'morhetz/gruvbox'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -27,6 +28,7 @@ set rnu
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nowrap
 
 " Status Line
 set statusline=buffer=%n\  " %n=buffer number
