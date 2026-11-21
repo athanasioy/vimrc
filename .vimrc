@@ -51,7 +51,7 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 vnoremap <leader>y "*y
 nnoremap <leader>p "*p
-vnoremap <leader>c !clip.exe<cr> " WSL Copy to Windows clipboard helper
+vnoremap <leader>c !clip.exe<cr>u " WSL Copy to Windows clipboard helper
 
 " NerdTree
 nnoremap <F2> :NERDTreeToggle<cr>
